@@ -27,16 +27,17 @@
   </style>
 
 <div>
-  <button class="btn btn-sm btn-like" >
-    <i class="fa fa-thumbs-up" id="like"></i>
+
+  <button class="btn btn-sm btn-like" (click)="likesth()">
+    <i class="fa fa-thumbs-up" id="like"></i>{{upvoteth}}
  </button>
 
- <button class="btn btn-sm btn-dislike" >
-   <i class="fa fa-thumbs-down" id="dislike"></i>
+ <button class="btn btn-sm btn-dislike" (click)="dislikesth()">
+   <i class="fa fa-thumbs-down" id="dislike"></i>{{downvoteth}}
  </button>
 
  <button class="btn btn-sm btn-delete" id="del">
    <i class="fa fa-trash" id="delete"></i>
  </button>
-
+ 
 </div>
