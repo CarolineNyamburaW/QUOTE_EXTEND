@@ -1,6 +1,61 @@
 
 <!-- Add Quote Here -->
 
+<style>
+
+  h1 {
+     font-size: 8vh;
+     color: #DAA520;
+    
+    }
+  
+    h2 {
+     font-size: 5vh;
+     color: #DAA520;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      font-family: 'Rancho', cursive; 
+    }
+  
+  form {
+    
+    margin: 0 auto;
+    
+  }
+  
+  .d-md-flex {
+    display: flex!important;
+  }
+  
+  form .form-control {
+    margin: 10px;
+    font-family: 'Rancho', cursive;    
+    font-size: 4vh;
+   
+  }
+  
+  
+  .btn-warning {
+    color: #fff;
+    background-color: #DAA520;
+    border-color: #DAA520;
+    padding: 1vh 5vh;
+    font-family: 'Rancho', cursive;    
+    font-size: 4vh;
+    margin-bottom: 5vh;
+  }
+  </style>
+  
+  
+  
+
 <div class="container text-center">
   <h2 style="margin-top: 5vh;">Add Your Quote Here</h2>
   <p>Post Your Quote and get people to vote for it. </p>
@@ -8,7 +63,7 @@
   <p>- Joseph Joubert</p>
 </div>
 
-<form action="" class="form" (ngSubmit)="submit(form.value, form)"  #form ="ngForm">
+<form action="" class="form" >
 <div class="form-group d-md-flex">
   <input type="yourName" class="form-control" name="yourName" placeholder="Your Name" ngModel>
 </div>
