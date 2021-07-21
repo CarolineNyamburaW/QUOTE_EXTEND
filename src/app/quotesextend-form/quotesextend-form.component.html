@@ -63,7 +63,7 @@
   <p>- Joseph Joubert</p>
 </div>
 
-<form action="" class="form" >
+<form action="" class="form" (ngSubmit)="submit(form.value, form)"  #form ="ngForm">
 <div class="form-group d-md-flex">
   <input type="yourName" class="form-control" name="yourName" placeholder="Your Name" ngModel>
 </div>
