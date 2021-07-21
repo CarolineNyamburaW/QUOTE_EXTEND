@@ -1,1 +1,32 @@
-<p>quotesextend-form works!</p>
+
+<!-- Add Quote Here -->
+
+<div class="container text-center">
+  <h2 style="margin-top: 5vh;">Add Your Quote Here</h2>
+  <p>Post Your Quote and get people to vote for it. </p>
+  <p>"Never write anything that does not give you great pleasure. Emotion is easily transferred from the writer to the reader."</p> 
+  <p>- Joseph Joubert</p>
+</div>
+
+<form action="" class="form" (ngSubmit)="submit(form.value, form)"  #form ="ngForm">
+<div class="form-group d-md-flex">
+  <input type="yourName" class="form-control" name="yourName" placeholder="Your Name" ngModel>
+</div>
+
+<div class="form-group d-md-flex">
+  <input type="date" class="form-control" name="date" ngModel>
+</div>
+
+<div class="form-group d-md-flex">
+  <input type="author" class="form-control" name="author" placeholder="Quote Author" ngModel>
+</div>
+
+<div class="form-group d-md-flex ">
+  <input type="quote" class="form-control" name="quote" placeholder="Qoute" ngModel>
+</div>
+
+<div class="d-flex justify-content-center">
+  <button type="submit" class="btn btn-warning" name="submit">Submit</button>
+</div>
+
+</form>
